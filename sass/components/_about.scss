@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Special+Elite&display=swap");
+.about-box {
+	.about-box-top {
+		height: 160px;
+		width: 160px;
+		border-radius: 25px;
+		background: #fff;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		overflow: hidden;
+		background-color: #163a5f;
+
+		&:before {
+			content: " ";
+			background-image: conic-gradient(#21aba5 20deg, transparent 120deg);
+			height: 150%;
+			width: 150%;
+			position: absolute;
+			left: -25%;
+			top: -25%;
+			animation: rotate 2s infinite linear;
+		}
+		&:after {
+			text-align: center;
+			content: "Javascript";
+			height: 94%;
+			width: 94%;
+			position: absolute;
+			background-color: white;
+			border-radius: 5px;
+			top: 3%;
+			left: 3%;
+			color: rgb(56, 50, 112);
+			display: grid;
+			place-items: center;
+			font-size: 20px;
+			letter-spacing: 6px;
+		}
+	}
+	.about-box-middle {
+		height: 240px;
+		width: 240px;
+		border: 5px solid $primary;
+		border-radius: 25px;
+		background: #fff;
+		margin-left: 23%;
+		margin-top: -20px;
+		overflow: hidden;
+		position: relative;
+		box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
+		@include media-breakpoint-down(sm) {
+			margin-left: 14%;
+		}
+		img {
+			height: 240px;
+			width: 240px;
+			object-fit: cover;
+		}
+	}
+	.about-box-bottom {
+		height: 160px;
+		width: 160px;
+		border-radius: 25px;
+		background: #fff;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 60%;
+		margin-top: -20px;
+		box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		overflow: hidden;
+		background-color: #1d566e;
+		
+
+		&:before {
+			content: " ";
+			background-image: conic-gradient(#91c5db 20deg, transparent 120deg);
+			height: 150%;
+			width: 150%;
+			position: absolute;
+			left: -25%;
+			top: -25%;
+			animation: rotate 2s infinite linear;
+		}
+		&:after {
+			text-align: center;
+			content: "CSS";
+			height: 94%;
+			width: 94%;
+			position: absolute;
+			background-color: white;
+			border-radius: 5px;
+			top: 3%;
+			left: 3%;
+			color: rgb(34, 23, 23);
+			display: grid;
+			place-items: center;
+			font-size: 20px;
+			letter-spacing: 6px;
+		}
+	}
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,22 @@
+#skills {
+	background-image:url('../images/try.jpg');
+	background-repeat: no-repeat;
+	background: #fff;
+}
+
+.spec-card {
+	img {
+		width: 70px;
+		height: 70px;
+		object-fit: contain;
+	}
+}
+
+.skill {
+	
+	margin-bottom: 20px;
+	h5 {
+		margin-bottom: 0;
+	}
+}
+

@@ -1,0 +1,39 @@
+#banner{
+	background-image: url('../images/bg10.webp');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding:230px 0 180px 0;
+	position: relative;
+	&:before{
+		background-color: rgba(0, 0, 0, 0.75);
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+	}
+}
+
+.jd-profile-pic{
+	position: relative;
+	margin-bottom: 30px;
+	max-width: 90%;
+	&:before{
+		content:"";
+		position: absolute;
+		top:-8px;
+		left:7px;
+		height:100%;
+		width:100%;
+		border:3px solid $primary;
+		border-radius: 14px;
+		transform: rotate(-4deg);
+	}
+	img{
+		max-width: 100%;
+		position: relative;
+	}
+}
